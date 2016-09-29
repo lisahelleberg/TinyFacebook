@@ -12,6 +12,13 @@ namespace Sandbox
 
             Console.WriteLine($"{status1.GetStatusText()} (Likes: {status1.GetNoOfLikes()}, Dislikes: {status1.GetNoOfDislikes()})");
 
+            status1.AddOneLike();
+            status1.AddOneDislike();
+            status1.AddOneLike();
+            status1.AddOneLike();
+            status1.AddOneDislike();
+            status1.AddOneLike();
+
 
             // The LAST line of code should be ABOVE this line
         }
