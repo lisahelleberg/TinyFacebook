@@ -10,6 +10,9 @@ namespace Sandbox
             Console.WriteLine("Test of part 2...");
             Status status1 = new Status("I am late for class!! OMG!!");
 
+            Console.WriteLine($"{status1.GetStatusText()} (Likes: {status1.GetNoOfLikes()}, Dislikes: {status1.GetNoOfDislikes()})");
+
+
             // The LAST line of code should be ABOVE this line
         }
     }
