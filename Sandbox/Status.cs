@@ -13,7 +13,6 @@ namespace Sandbox
         private string statusText;
         private int likes;
         private int dislikes;
-        private int numberOfReads; // Added for part 3
 
         // Create the Status - initially, the status has zero likes
         // and zero dislikes
@@ -22,7 +21,6 @@ namespace Sandbox
             this.statusText = statusText;
             this.likes = 0;
             this.dislikes = 0;
-            numberOfReads = 0;
         }
 
         public void AddOneLike()
