@@ -22,6 +22,7 @@ namespace Sandbox
             this.statusText = statusText;
             this.likes = 0;
             this.dislikes = 0;
+            numberOfReads = 0;
         }
 
         public void AddOneLike()
