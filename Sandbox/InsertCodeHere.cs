@@ -19,6 +19,9 @@ namespace Sandbox
             status1.AddOneDislike();
             status1.AddOneLike();
 
+            Console.WriteLine($"{status1.GetStatusText()} (Likes: {status1.GetNoOfLikes()}, Dislikes: {status1.GetNoOfDislikes()})");
+
+
 
             // The LAST line of code should be ABOVE this line
         }
