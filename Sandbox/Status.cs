@@ -13,6 +13,7 @@ namespace Sandbox
         private string statusText;
         private int likes;
         private int dislikes;
+        private int numberOfReads; // Added for part 3
 
         // Create the Status - initially, the status has zero likes
         // and zero dislikes
