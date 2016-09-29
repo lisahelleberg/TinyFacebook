@@ -21,7 +21,7 @@ namespace Sandbox
 
             Console.WriteLine($"{status1.GetStatusText()} (Likes: {status1.GetNoOfLikes()}, Dislikes: {status1.GetNoOfDislikes()})");
 
-
+            Console.WriteLine("Test of part 3...");
 
             // The LAST line of code should be ABOVE this line
         }
