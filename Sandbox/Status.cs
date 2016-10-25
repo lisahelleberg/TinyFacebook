@@ -13,6 +13,7 @@ namespace Sandbox
         private string statusText;
         private int likes;
         private int dislikes;
+        private int numberOfReads;
 
         // Create the Status - initially, the status has zero likes
         // and zero dislikes
@@ -21,6 +22,7 @@ namespace Sandbox
             this.statusText = statusText;
             this.likes = 0;
             this.dislikes = 0;
+            this.numberOfReads = 0;
         }
 
         public void AddOneLike()
@@ -31,6 +33,11 @@ namespace Sandbox
         public void AddOneDislike()
         {
             dislikes = dislikes + 1;
+        }
+
+        public void ReadStatus()
+        {
+            numberOfReads = ++numberOfReads;
         }
 
         public string GetStatusText()
@@ -47,5 +54,21 @@ namespace Sandbox
         {
             return dislikes;
         }
+
+        public int GetNumberOfReads()
+        {
+            return numberOfReads;
+        }
+
+        public void PrintInformation()
+        {
+            Console.Write("The status '{0}' has {1} likes and {2} dislikes. ", GetStatusText(), GetNoOfLikes(), GetNoOfDislikes() );
+            Console.WriteLine("The status has been read {0} times.", GetNumberOfReads());
+        }
     }
 }
+
+
+
+
+//$"Bogen {aBook.GetISBN()} er tilføjet!"
